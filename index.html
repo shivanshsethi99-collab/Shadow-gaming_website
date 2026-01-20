@@ -1,35 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shadow Gaming</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 40px;
-    }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 22px;
-      background: #2563eb;
-      color: white;
-      border-radius: 12px;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Gaming | Official Website</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+  }
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg,#000000,#111827);
+  }
+  header h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  header p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    color: #ccc;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+  section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .about h2, .videos h2, .stats h2, .shorts h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .about p {
+    color: #d0d0d0;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .video-grid, .shorts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+  }
+  .video-card {
+    background: #111111;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    transition: transform 0.3s;
+  }
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  .video-card img {
+    width: 100%;
+    display: block;
+  }
+  .video-card div {
+    padding: 15px;
+  }
+  .video-card h3 {
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+  .video-card p {
+    font-size: 14px;
+    color: #bdbdbd;
+  }
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .stats div {
+    font-size: 20px;
+  }
+  .cta {
+    text-align: center;
+    background: #0f172a;
+    padding: 50px 20px;
+    margin-top: 40px;
+  }
+  .cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .cta p {
+    color: #d1d5db;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #888;
+    font-size: 14px;
+  }
+</style>
 </head>
 <body>
-  <h1>Shadow Gaming</h1>
-  <p>Professional Gaming Content</p>
 
-  <a href="https://youtube.com/@shadow_gaming_847" target="_blank">
-    Visit YouTube Channel
-  </a>
+<header>
+  <h1>Shadow Gaming</h1>
+  <p>Welcome to the official website of <b>Shadow Gaming</b> 🎮<br>
+     High-energy gameplay, cinematic edits, epic highlights and shorts!</p>
+  <a class="btn" href="https://youtube.com/@shadow_gaming_847" target="_blank">Subscribe on YouTube 🔴</a>
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Shadow Gaming</h2>
+  <p>Shadow Gaming delivers professional gaming content, action-packed videos, shorts, and tutorials.  
+     If you love top-level gameplay and entertainment, you are at the right place.  
+     Don’t forget to like, comment, and subscribe for updates!</p>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div>Subscribers: <span id="subs">—</span></div>
+  <div>Total Videos: <span id="videos">—</span></div>
+</section>
+
+<!-- VIDEOS -->
+<section class="videos">
+  <h2>Popular Videos</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VIDEOID1/hqdefault.jpg" alt="Video 1">
+      <div>
+        <h3>Epic Clutch Gameplay 🔥</h3>
+        <p>High-level gaming action & cinematic edits.</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VIDEOID2/hqdefault.jpg" alt="Video 2">
+      <div>
+        <h3>Pro Strategies Explained</h3>
+        <p>Learn how to dominate in your favorite games.</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VIDEOID3/hqdefault.jpg" alt="Video 3">
+      <div>
+        <h3>Gaming Shorts ⚡</h3>
+        <p>Fast, intense, and addictive moments.</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VIDEOID4/hqdefault.jpg" alt="Video 4">
+      <div>
+        <h3>Top Plays of the Month</h3>
+        <p>Epic highlights compiled for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHORTS -->
+<section class="shorts">
+  <h2>Latest Shorts</h2>
+  <div class="shorts-grid">
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VIDEOID5/hqdefault.jpg" alt="Short 1">
+      <div><h3>Quick Tips ⚡</h3></div>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VIDEOID6/hqdefault.jpg" alt="Short 2">
+      <div><h3>Funny Moments 😂</h3></div>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VIDEOID7/hqdefault.jpg" alt="Short 3">
+      <div><h3>Insane Reactions 😱</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Enjoying the Content?</h2>
+  <p>Like, share, and subscribe to Shadow Gaming! 🔔  
+     Stay updated with all latest videos, shorts, and epic gaming highlights.</p>
+  <a class="btn" href="https://youtube.com/@shadow_gaming_847" target="_blank">Like • Share • Subscribe</a>
+</div>
+
+<footer>
+  © 2026 Shadow Gaming • All Rights Reserved
+</footer>
+
+<script>
+// Live subscriber & video count (YouTube API)
+const API_KEY = 'AIzaSyCXJp0jPs9TUB5Ptib6FudYli60mStVk_I';
+const USERNAME = 'shadow_gaming_847';
+
+fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=${USERNAME}&key=${API_KEY}`)
+.then(res => res.json())
+.then(data => {
+  if(data.items && data.items.length > 0){
+    document.getElementById('subs').textContent = Number(data.items[0].statistics.subscriberCount).toLocaleString();
+    document.getElementById('videos').textContent = Number(data.items[0].statistics.videoCount).toLocaleString();
+  }
+});
+</script>
+
 </body>
 </html>
