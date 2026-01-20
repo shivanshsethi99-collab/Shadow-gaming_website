@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shadow Gaming | Official Website</title>
+
+<!-- Favicon -->
+<link rel="icon" href="logo.png" type="image/png">
+
 <style>
   body {
     margin: 0;
@@ -11,22 +15,33 @@
     background: #0a0a0a;
     color: #fff;
   }
+
   header {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(135deg,#000000,#111827);
   }
+
+  header img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+
   header h1 {
     font-size: 44px;
     margin-bottom: 10px;
     letter-spacing: 1px;
   }
+
   header p {
     max-width: 700px;
     margin: auto;
     font-size: 16px;
     color: #ccc;
   }
+
   .btn {
     display: inline-block;
     margin-top: 25px;
@@ -37,26 +52,31 @@
     border-radius: 14px;
     font-weight: bold;
   }
+
   section {
     padding: 50px 20px;
     max-width: 1200px;
     margin: auto;
   }
+
   .about h2, .videos h2, .stats h2, .shorts h2 {
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
   }
+
   .about p {
     color: #d0d0d0;
     line-height: 1.6;
     text-align: center;
   }
+
   .video-grid, .shorts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap: 20px;
   }
+
   .video-card {
     background: #111111;
     border-radius: 18px;
@@ -64,50 +84,69 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.6);
     transition: transform 0.3s;
   }
+
   .video-card:hover {
     transform: scale(1.05);
   }
+
   .video-card img {
     width: 100%;
     display: block;
   }
+
   .video-card div {
     padding: 15px;
   }
+
   .video-card h3 {
     font-size: 16px;
     margin: 0 0 8px;
   }
+
   .video-card p {
     font-size: 14px;
     color: #bdbdbd;
   }
+
   .stats {
     display: flex;
     justify-content: center;
     gap: 50px;
     text-align: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
   }
+
   .stats div {
     font-size: 20px;
   }
+
   .cta {
     text-align: center;
     background: #0f172a;
     padding: 50px 20px;
     margin-top: 40px;
   }
+
   .cta h2 {
     font-size: 32px;
     margin-bottom: 15px;
   }
+
   .cta p {
     color: #d1d5db;
     max-width: 700px;
     margin: auto;
     line-height: 1.6;
   }
+
+  .cta img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+
   footer {
     text-align: center;
     padding: 20px;
@@ -117,12 +156,15 @@
   }
 </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
+  <img src="logo.png" alt="Shadow Gaming Logo">
   <h1>Shadow Gaming</h1>
   <p>Welcome to the official website of <b>Shadow Gaming</b> 🎮<br>
-     High-energy gameplay, cinematic edits, epic highlights and shorts!</p>
+     High-energy gameplay, cinematic edits, epic highlights, and shorts!</p>
   <a class="btn" href="https://youtube.com/@shadow_gaming_847" target="_blank">Subscribe on YouTube 🔴</a>
 </header>
 
@@ -200,6 +242,8 @@
   <p>Like, share, and subscribe to Shadow Gaming! 🔔  
      Stay updated with all latest videos, shorts, and epic gaming highlights.</p>
   <a class="btn" href="https://youtube.com/@shadow_gaming_847" target="_blank">Like • Share • Subscribe</a>
+  <br>
+  <img src="logo.png" alt="Shadow Gaming Logo">
 </div>
 
 <footer>
@@ -207,7 +251,7 @@
 </footer>
 
 <script>
-// Live subscriber & video count (YouTube API)
+// Live subscriber & video count using YouTube API
 const API_KEY = 'AIzaSyCXJp0jPs9TUB5Ptib6FudYli60mStVk_I';
 const USERNAME = 'shadow_gaming_847';
 
